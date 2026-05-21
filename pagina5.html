@@ -1,98 +1,399 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Cuál es tu preferido?</title>
-    <link rel="icon" href="https://w7.pngwing.com/pngs/870/61/png-transparent-comics-comic-book-others-comics-comic-book-logo-thumbnail.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta — HeroVerse</title>
+  <meta name="description" content="¿Cuál es tu superhéroe favorito? Cuéntanos en nuestra encuesta.">
+  <meta name="author" content="DHG">
+  <link rel="icon" href="https://w7.pngwing.com/pngs/870/61/png-transparent-comics-comic-book-others-comics-comic-book-logo-thumbnail.png" type="image/png">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h2>¡Explora!</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Importancia de los Superheroés</a></li>
-                <li><a href="pagina2.html">Impacto en otros medios</a></li>
-                <li><a href="pagina3.html">Los héroes más populares del Sector 2814!</a></li>
-                <li><a href="pagina4.html">Los héroes más queridos en el multiverso!</a></li>
-            </ul>
-        </nav>
-    </header>
 
-
-
-    <main>
-        <h3>ENCUESTA!!!</h3>
-        <p>Nos interesan mucho los gustos de las personas en la actualidad, asi que si quieres ayudanos contestandonos esta encuesta para conocer cuál es tu héroe preferido 😁😁😁</p>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required tabindex="1">
-                <br><br>
-        
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" required tabindex="2">
-                <br><br>
-        
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required tabindex="3">
-                <br><br>
-        
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" tabindex="4">
-                <br><br>
-        
-                <label for="heroe">Nombre de tu Héroe Favorito:</label>
-                <input type="text" id="heroe" name="heroe" tabindex="5">
-                <br><br>
-        
-                <button type="submit">Enviar</button>
-            </form>
-
-        <pre>
-            _____________________________________________
-          //:::::::::::::::::::::::::::::::::::::::::::::\\
-        //:::_______:::::::::________::::::::::_____:::::::\\
-      //:::_/   _-"":::_--"""        """--_::::\_  ):::::::::\\
-     //:::/    /:::::_"                    "-_:::\/:::::|^\:::\\
-    //:::/   /~::::::I__                      \:::::::::|  \:::\\
-    \\:::\   (::::::::::""""---___________     "--------"  /::://
-     \\:::\  |::::::::::::::::::::::::::::""""==____      /::://
-      \\:::"\/::::::::::::::::::::::::::::::::::::::\   /~::://
-        \\:::::::::::::::::::::::::::::::::::::::::::)/~::://
-          \\::::\""""""------_____::::::::::::::::::::::://
-            \\:::"\               """""-----_____:::::://
-              \\:::"\    __----__                )::://
-                \\:::"\/~::::::::~\_         __/~:://
-                  \\::::::::::::::::""----""":::://
-                    \\::::::::::::::::::::::::://
-                      \\:::\^""--._.--""^/::://
-                        \\::"\         /":://
-                          \\::"\     /":://
-                            \\::"\_/":://
-                              \\::::://
-                                \\_//
-                                  "</pre>    
-    </main>
-
-
-    <aside>
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-text">HERO<span class="text-danger">VERSE</span></span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina2.html">Otros Medios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina3.html">Sector 2814</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina4.html">Multiverso</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pagina5.html">Encuesta</a></li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn btn-sm btn-outline-light rounded-pill px-3" id="darkToggle" title="Cambiar tema">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </li>
         </ul>
-        <h4><span style="color: red;"> SI NECESITAS AYUDA...</span></h4>
-        <p>Si quieres investigar más superhéroes antes de contestar la encuesta puedes entrar a: <a href="https://ssuperheroes.com/">ssuperheroes.com</a></p>
+      </div>
+    </div>
+  </nav>
 
-        <p>Si quieres contactarnos para ayudarte a crear tu página web <a href="tel +8110354587">Llamanos &phone;</a> <br>O puedes mandarnos un correo a: <address>WebCreators@hotmail.com</address></p>
-    </aside>
+  <!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+  <header class="page-hero position-relative overflow-hidden">
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="container position-relative z-1" data-aos="fade-up" data-aos-duration="800">
+      <p class="overline-label text-danger text-uppercase fw-bold letter-wide mb-2">
+        <i class="bi bi-pencil-square me-1"></i> Tu opinión importa
+      </p>
+      <h1 class="hero-title">¿Cuál es tu<br><span class="text-danger">Favorito?</span></h1>
+      <p class="hero-sub mx-auto mt-3">
+        Nos interesa conocer los gustos de los fans. Completa la encuesta<br class="d-none d-md-inline">
+        y cuéntanos quién es tu superhéroe preferido.
+      </p>
+    </div>
+  </header>
 
+  <!-- ═══════════════════════ MAIN ═══════════════════════ -->
+  <main class="py-5 py-lg-6 content-block">
+    <div class="container">
+      <div class="row justify-content-center g-5 align-items-start">
 
-    <footer>
-        <p>Fin del Articulo</p>
-        <hr>
-        <address>
-            <p>Desarrollado por DHG</p>
-            <p>Derechos Reservados &copy;</p>
-        </address>
-    </footer> 
+        <!-- ── Formulario ── -->
+        <div class="col-lg-7" data-aos="fade-right" data-aos-duration="800">
+
+          <!-- Formulario activo -->
+          <div id="surveyForm">
+            <div class="survey-form">
+              <h2 class="section-heading mb-1">Encuesta de Héroes</h2>
+              <p class="text-muted small mb-4">Todos los campos marcados con * son obligatorios.</p>
+
+              <!-- Nombre -->
+              <div class="mb-4">
+                <label for="nombre" class="form-label">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" class="form-control"
+                       placeholder="Ej. Peter Parker" required tabindex="1"
+                       autocomplete="name">
+              </div>
+
+              <!-- Edad -->
+              <div class="mb-4">
+                <label for="edad" class="form-label">Edad *</label>
+                <input type="number" id="edad" name="edad" class="form-control"
+                       placeholder="Ej. 25" min="1" max="120" required tabindex="2">
+              </div>
+
+              <!-- Email -->
+              <div class="mb-4">
+                <label for="email" class="form-label">Correo Electrónico *</label>
+                <input type="email" id="email" name="email" class="form-control"
+                       placeholder="Ej. peter@dailybugle.com" required tabindex="3"
+                       autocomplete="email">
+              </div>
+
+              <!-- Teléfono -->
+              <div class="mb-4">
+                <label for="telefono" class="form-label">Teléfono <span class="text-muted fw-normal">(opcional)</span></label>
+                <input type="tel" id="telefono" name="telefono" class="form-control"
+                       placeholder="Ej. 811 000 0000" tabindex="4"
+                       autocomplete="tel">
+              </div>
+
+              <!-- Héroe favorito (select) -->
+              <div class="mb-4">
+                <label for="heroe" class="form-label">Tu Héroe Favorito *</label>
+                <select id="heroe" name="heroe" class="form-control" required tabindex="5"
+                        style="background: var(--bg-dark); border-color: var(--border); color: #fff;">
+                  <option value="" disabled selected>Selecciona un héroe...</option>
+                  <optgroup label="DC Comics">
+                    <option value="Superman">Superman</option>
+                    <option value="Batman">Batman</option>
+                    <option value="Wonder Woman">Wonder Woman</option>
+                    <option value="The Flash">The Flash</option>
+                    <option value="Green Lantern">Green Lantern</option>
+                    <option value="Aquaman">Aquaman</option>
+                  </optgroup>
+                  <optgroup label="Marvel Comics">
+                    <option value="Spider-Man">Spider-Man</option>
+                    <option value="Wolverine">Wolverine</option>
+                    <option value="Iron Man">Iron Man</option>
+                    <option value="Captain America">Captain America</option>
+                    <option value="Thor">Thor</option>
+                    <option value="Black Panther">Black Panther</option>
+                  </optgroup>
+                  <option value="Otro">Otro (lo escribiré abajo)</option>
+                </select>
+              </div>
+
+              <!-- Campo "otro" -->
+              <div class="mb-4" id="otroHeroeDiv" style="display:none;">
+                <label for="otroHeroe" class="form-label">¿Cuál? *</label>
+                <input type="text" id="otroHeroe" name="otroHeroe" class="form-control"
+                       placeholder="Escribe el nombre de tu héroe..." tabindex="6">
+              </div>
+
+              <!-- ¿Por qué? -->
+              <div class="mb-4">
+                <label for="razon" class="form-label">¿Por qué es tu favorito? <span class="text-muted fw-normal">(opcional)</span></label>
+                <textarea id="razon" name="razon" class="form-control" rows="3"
+                          placeholder="Cuéntanos brevemente qué hace especial a tu héroe..."
+                          tabindex="7"
+                          style="resize: vertical;"></textarea>
+              </div>
+
+              <!-- Universo preferido -->
+              <div class="mb-4">
+                <label class="form-label d-block">Universo preferido</label>
+                <div class="d-flex gap-3 flex-wrap">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="universo" id="uniDC" value="DC" tabindex="8">
+                    <label class="form-check-label text-muted" for="uniDC">DC Comics</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="universo" id="uniMarvel" value="Marvel" tabindex="9">
+                    <label class="form-check-label text-muted" for="uniMarvel">Marvel Comics</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="universo" id="uniAmbos" value="Ambos" tabindex="10">
+                    <label class="form-check-label text-muted" for="uniAmbos">¡Los dos!</label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-danger w-100 py-3 rounded-pill fw-semibold fs-5" tabindex="11"
+                      style="font-family: var(--font-display); letter-spacing: 0.06em;">
+                <i class="bi bi-send-fill me-2"></i>Enviar Encuesta
+              </button>
+            </div>
+          </div>
+
+          <!-- ── Estado de éxito (oculto por defecto) ── -->
+          <div id="surveySuccess" class="d-none">
+            <div class="survey-form text-center py-5">
+              <div class="success-icon mb-4">
+                <i class="bi bi-patch-check-fill text-danger" style="font-size: 4rem;"></i>
+              </div>
+              <h2 class="section-heading">¡Gracias por participar!</h2>
+              <p class="section-body mb-4">
+                Tu respuesta ha sido registrada. Tu héroe favorito es parte<br>
+                de lo que hace grande a este universo.
+              </p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="index.html" class="btn btn-outline-secondary rounded-pill px-4">
+                  <i class="bi bi-house me-2"></i>Volver al Inicio
+                </a>
+                <button class="btn btn-danger rounded-pill px-4"
+                        onclick="document.getElementById('surveySuccess').classList.add('d-none'); document.getElementById('surveyForm').classList.remove('d-none');">
+                  <i class="bi bi-arrow-repeat me-2"></i>Nueva respuesta
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── Sidebar info ── -->
+        <div class="col-lg-4 d-none d-lg-block" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+
+          <!-- Link externo -->
+          <div class="info-card mb-4">
+            <h5 class="info-card-title">
+              <i class="bi bi-search me-2 text-danger"></i>¿Necesitas inspiración?
+            </h5>
+            <p class="text-muted small">
+              Si quieres conocer más superhéroes antes de contestar, visita este directorio completo:
+            </p>
+            <a href="https://ssuperheroes.com/" target="_blank" rel="noopener"
+               class="btn btn-outline-danger btn-sm rounded-pill w-100">
+              <i class="bi bi-box-arrow-up-right me-1"></i>ssuperheroes.com
+            </a>
+          </div>
+
+          <!-- Ranking popular -->
+          <div class="info-card">
+            <h5 class="info-card-title mb-3">
+              <i class="bi bi-trophy-fill me-2 text-warning"></i>Los más populares
+            </h5>
+            <div class="ranking-list">
+              <div class="ranking-item">
+                <span class="ranking-pos">01</span>
+                <span class="ranking-name">Spider-Man</span>
+                <span class="ranking-pub marvel-text">Marvel</span>
+              </div>
+              <div class="ranking-item">
+                <span class="ranking-pos">02</span>
+                <span class="ranking-name">Batman</span>
+                <span class="ranking-pub dc-text">DC</span>
+              </div>
+              <div class="ranking-item">
+                <span class="ranking-pos">03</span>
+                <span class="ranking-name">Superman</span>
+                <span class="ranking-pub dc-text">DC</span>
+              </div>
+              <div class="ranking-item">
+                <span class="ranking-pos">04</span>
+                <span class="ranking-name">Wolverine</span>
+                <span class="ranking-pub marvel-text">Marvel</span>
+              </div>
+              <div class="ranking-item">
+                <span class="ranking-pos">05</span>
+                <span class="ranking-name">Wonder Woman</span>
+                <span class="ranking-pub dc-text">DC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contacto -->
+          <div class="info-card mt-4">
+            <h5 class="info-card-title">
+              <i class="bi bi-headset me-2 text-danger"></i>¿Necesitas ayuda?
+            </h5>
+            <p class="text-muted small mb-3">¿Quieres que te ayudemos a crear tu propia página web?</p>
+            <a href="tel:+8110354587" class="btn btn-outline-secondary btn-sm rounded-pill w-100 mb-2">
+              <i class="bi bi-telephone me-1"></i>811 035 4587
+            </a>
+            <a href="mailto:WebCreators@hotmail.com" class="btn btn-outline-secondary btn-sm rounded-pill w-100">
+              <i class="bi bi-envelope me-1"></i>WebCreators@hotmail.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Navegación -->
+      <div class="d-flex justify-content-start mt-5">
+        <a href="pagina4.html" class="btn btn-outline-secondary rounded-pill px-4">
+          <i class="bi bi-arrow-left me-2"></i>Multiverso
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4">
+          <span class="brand-text fs-4">HERO<span class="text-danger">VERSE</span></span>
+          <p class="small text-muted mt-2 mb-0">Explorando la cultura de los superhéroes.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="index.html" class="footer-link me-3">Inicio</a>
+          <a href="pagina2.html" class="footer-link me-3">Medios</a>
+          <a href="pagina3.html" class="footer-link me-3">Sector 2814</a>
+          <a href="pagina5.html" class="footer-link">Encuesta</a>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="small text-muted mb-1">
+            <i class="bi bi-telephone me-1"></i>
+            <a href="tel:+8110354587" class="footer-link">811 035 4587</a>
+          </p>
+          <p class="small text-muted mb-0">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="mailto:WebCreators@hotmail.com" class="footer-link">WebCreators@hotmail.com</a>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <p class="text-center text-muted small mb-0">Desarrollado por DHG &copy; 2024. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
+
+  <script>
+    // Mostrar campo "otro héroe" condicionalmente
+    document.getElementById('heroe').addEventListener('change', function () {
+      const otroDiv = document.getElementById('otroHeroeDiv');
+      const otroInput = document.getElementById('otroHeroe');
+      if (this.value === 'Otro') {
+        otroDiv.style.display = 'block';
+        otroInput.required = true;
+      } else {
+        otroDiv.style.display = 'none';
+        otroInput.required = false;
+      }
+    });
+
+    // Select light mode fix
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroSelect = document.getElementById('heroe');
+      const applySelectTheme = (theme) => {
+        heroSelect.style.background = theme === 'light' ? '#f8f8f8' : 'var(--bg-dark)';
+        heroSelect.style.color      = theme === 'light' ? '#111' : '#fff';
+      };
+      const obs = new MutationObserver(() =>
+        applySelectTheme(document.documentElement.getAttribute('data-bs-theme'))
+      );
+      obs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
+      applySelectTheme(document.documentElement.getAttribute('data-bs-theme') || 'dark');
+    });
+  </script>
+
+  <style>
+    /* Info cards sidebar */
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .info-card-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    [data-bs-theme="light"] .info-card-title { color: #111; }
+
+    /* Ranking */
+    .ranking-list { display: flex; flex-direction: column; gap: 0.5rem; }
+    .ranking-item {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 0.5rem 0; border-bottom: 1px solid var(--border);
+    }
+    .ranking-item:last-child { border-bottom: none; }
+    .ranking-pos {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--red);
+      min-width: 26px;
+    }
+    .ranking-name {
+      font-size: 0.9rem;
+      color: #fff;
+      flex-grow: 1;
+      font-weight: 600;
+    }
+    [data-bs-theme="light"] .ranking-name { color: #111; }
+    .ranking-pub { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .marvel-text { color: #ff6b6b; }
+    .dc-text     { color: #4da3ff; }
+
+    /* Form check custom color */
+    .form-check-input:checked {
+      background-color: var(--red);
+      border-color: var(--red);
+    }
+  </style>
+
 </body>
-
 </html>

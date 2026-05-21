@@ -1,88 +1,499 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impacto en otros medios</title>
-    <link rel="icon" href="https://w7.pngwing.com/pngs/870/61/png-transparent-comics-comic-book-others-comics-comic-book-logo-thumbnail.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impacto en Otros Medios — HeroVerse</title>
+  <meta name="description" content="El impacto de los superhéroes en el cine, los videojuegos y las series de televisión.">
+  <meta name="author" content="DHG">
+  <link rel="icon" href="https://w7.pngwing.com/pngs/870/61/png-transparent-comics-comic-book-others-comics-comic-book-logo-thumbnail.png" type="image/png">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h2>¡Explora!</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Importancia de los Superheroés</a></li>
-                <li><a href="pagina3.html">Los héroes más populares del Sector 2814!</a></li>
-                <li><a href="pagina4.html">Los héroes más queridos en el multiverso!</a></li>
-                <li><a href="pagina5.html">¿Cuál es tu preferido?</a></li>
-            </ul>
-        </nav>
-    </header>
 
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-text">HERO<span class="text-danger">VERSE</span></span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pagina2.html">Otros Medios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina3.html">Sector 2814</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina4.html">Multiverso</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina5.html">Encuesta</a></li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn btn-sm btn-outline-light rounded-pill px-3" id="darkToggle" title="Cambiar tema">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+  <header class="page-hero position-relative overflow-hidden">
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="container position-relative z-1" data-aos="fade-up" data-aos-duration="800">
+      <p class="overline-label text-danger text-uppercase fw-bold letter-wide mb-2">
+        <i class="bi bi-camera-reels me-1"></i> Cine · Videojuegos · Series
+      </p>
+      <h1 class="hero-title">El Impacto en<br><span class="text-danger">Otros Medios</span></h1>
+      <p class="hero-sub mx-auto mt-3">
+        De los cómics a la gran pantalla, los controles y la televisión —<br class="d-none d-md-inline">
+        cómo los superhéroes conquistaron cada medio.
+      </p>
+    </div>
+  </header>
 
-    <main>
-        <article>
-            <center>
-                <header><h1>El impacto de los Superheroés en diferentes medios.</h1></header>
-            </center>
-            <p>El impacto de los superhéroes en el cine, los videojuegos y las series ha sido profundo, moldeando cada medio a lo largo del tiempo.</p>
-            <section>
-                <h2>Peliculas</h2>
-                <p>En cine, <em>"Superman" (1978)</em> fue pionera, estableciendo un nuevo estándar para las adaptaciones de cómics y marcando el inicio del género moderno de superhéroes. <em>"Batman" (1989)</em>  introdujo un enfoque más oscuro, mientras que <em>"Spider-Man"(2002)</em>  revitalizó el género con su fórmula exitosa. <em> "The Avengers" (2012)</em>  consolidó el universo cinematográfico de Marvel, demostrando el potencial de las franquicias compartidas. Tanto es su éxito que incluso en la actualidad que muchas películas de SuperHéroes son mediocres o malas, hay algunas cuantas excepciones que, en su mayoría, logra alcanzar billones de dolares como lo fueron <em>Avengers: Infinity War</em> <em>Avengers:Endgame</em>, <em>Spiderman Far From Home</em> o por la parte de la animación <em><abbr title="INTO THE SPIDER-VERSE">ITSV</abbr> y <abbr title="ACROSS THE SPIDER-VERSE">ATSV</abbr></em> o incluso películas que no fueron tan éxitosas monetariamente pero son amadas por los fans como es el caso de la <em><abbr title="Zack Snyder's Justice League">ZS:JL</abbr></em></p>
-                <!--Poner abreviatura de la Liga de la Justicia-->
-                <center>
-                    <iframe width="500" height="315" src="https://www.youtube.com/embed/TzwB62cWsAw?si=oMppaHLWUg82PgNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </center>                
-            </section>
+  <!-- ═══════════════════════ MAIN ═══════════════════════ -->
+  <main>
 
-            <section>
-                <h2>Videojuegos</h2>
-                <p>En videojuegos, <em>"Spider-Man" (1982)</em> para Atari 2600 fue uno de los primeros juegos de superhéroes. <em>"Batman: Arkham Asylum" (2009)</em> innovó con su sistema de combate y narrativa, mientras que <em>"Spider-Man" (2018)</em> para PS4 destacó por su jugabilidad. <em>"Marvel’s Avengers" (2020)</em> intentó crear un universo compartido en videojuegos, aunque recibió críticas mixtas.</p>
-                <center>
-                    <img src="https://cdn1.epicgames.com/offer/5f7c811695f14b8fa3a8e1ea35713d23/CodeRedemption_ArkhamAsylum-335x440-58065661db02a2f429d50867e130925e1_1200x1600-5dc57284959156b5eece14a18242073d" alt="Batman Arkham Asylum" height="300">
-                    <blockquote>
-                        <p>​ Ganó varios premios, incluido el de Mejor juego de acción y aventuras, Mejor juego y Juego del año de varios medios de comunicación, y ostentaba el récord mundial Guinness como «Juego de superhéroes más aclamado por la crítica». Ha sido citado como uno de los mejores videojuegos jamás creados</p>
-                        <cite>Fuente: <a href="https://es.wikipedia.org/wiki/Batman:_Arkham_Asylum#:~:text=%E2%80%8B%E2%80%8B%20Gan%C3%B3%20varios%20premios,los%20mejores%20videojuegos%20jam%C3%A1s%20creados.">Batman: Arkham Asylum-Wikipedia</a></cite>
-                    </blockquote>
-                </center>
-            </section>
+    <!-- ── Intro ── -->
+    <section class="py-5 content-block">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <p class="lead section-body" style="font-size:1.15rem;">
+              El impacto de los superhéroes en el cine, los videojuegos y las series ha sido profundo,
+              <strong>moldeando cada medio a lo largo del tiempo</strong> y creando algunas de las franquicias
+              más lucrativas de la historia del entretenimiento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <section>
-                <h2>Series de Televisión</h2>
-                <p>En series, <em>"Batman: The Animated Series" (1992-1995)</em> fue pionera en la animación de superhéroes, seguida por <em>"Spider-Man: The Animated Series" (1994-1998)</em>, que popularizó al personaje en televisión. <em>"Daredevil" (2015-2018)</em> destacó por su tono oscuro y desarrollo de personajes. En la actualidad tanto Marvel, DC y empresas de comics independientes (Por ejemplo </em>The Umbrella Academy</em>) siguen realizando series aprovechando la cantidad de episodios y duración para lograr productos mejores.</p>
-                <center>
-                    <img src="https://m.media-amazon.com/images/M/MV5BZmVkNDc3YjQtZDMzOS00MTNjLTljNzUtZDhjYWQxMmVlNjE5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg" alt="BATMAN: La Serie Animada" height="300">
-                </center>
-            </section>
+    <!-- ── PELÍCULAS ── -->
+    <section class="content-alt py-5 py-lg-6" id="peliculas">
+      <div class="container">
 
-            <section>
-                <p>En resumen, desde el icónico <em>"Superman"</em> en cine hasta el influyente <em>"Batman: The Animated Series"</em> en televisión, los superhéroes han dejado una huella significativa en todos estos medios (incluyendo otros como la música, libros, manga, etc.), contribuyendo a la evolución y popularidad del género.</p>
-            </section>
-            <h3>Ejemplo de una canción basada en el personaje de Superman</h3>
-            <audio controls src="3_Doors_Down_Kryptonite.mp3">Kryptonite</audio>
+        <div class="section-label-row d-flex align-items-center gap-3 mb-5" data-aos="fade-right">
+          <span class="media-icon text-danger"><i class="bi bi-camera-reels-fill fs-1"></i></span>
+          <div>
+            <span class="section-tag bg-danger text-white px-3 py-1 rounded-pill small fw-bold">Medio #1</span>
+            <h2 class="section-heading mt-1 mb-0">Películas</h2>
+          </div>
+        </div>
 
-        </article>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="800">
+            <p class="section-body">
+              En cine, <em>Superman (1978)</em> fue pionera, estableciendo un nuevo estándar para las
+              adaptaciones de cómics y marcando el inicio del género moderno de superhéroes.
+              <em>Batman (1989)</em> introdujo un enfoque más oscuro, mientras que
+              <em>Spider-Man (2002)</em> revitalizó el género con su fórmula exitosa.
+            </p>
+            <p class="section-body">
+              <em>The Avengers (2012)</em> consolidó el universo cinematográfico de Marvel,
+              demostrando el potencial de las franquicias compartidas. Incluso cuando muchas películas
+              actuales son mediocres, algunas excepciones logran alcanzar billones de dólares como
+              <em>Avengers: Infinity War</em>, <em>Avengers: Endgame</em> o en animación
+              <em><abbr title="Into The Spider-Verse">ITSV</abbr></em> y
+              <em><abbr title="Across The Spider-Verse">ATSV</abbr></em>.
+            </p>
 
-    </main>
+            <!-- Timeline de hitos -->
+            <div class="film-timeline mt-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="timeline-item">
+                <span class="timeline-year">1978</span>
+                <span class="timeline-text">Superman — el primer gran superhéroe en cine</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">1989</span>
+                <span class="timeline-text">Batman — el tono oscuro llega a los cómics</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2002</span>
+                <span class="timeline-text">Spider-Man — revitaliza el género</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2012</span>
+                <span class="timeline-text">The Avengers — nace el universo compartido</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2019</span>
+                <span class="timeline-text">Endgame — $2.8B, la película más taquillera</span>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-5 text-center d-flex flex-column gap-4">  
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+              <div class="ratio ratio-16x9 rounded overflow-hidden" style="box-shadow: 6px 6px 0 var(--red), 12px 12px 0 rgba(228,28,28,0.25);">
+                <iframe
+                  src="https://www.youtube.com/embed/TzwB62cWsAw?si=oMppaHLWUg82PgNM"
+                  title="La Edad de Oro del Cine de Superhéroes"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p class="text-muted small mt-2 mb-0 text-start ps-1">
+                <i class="bi bi-youtube text-danger me-1"></i> Video por: <strong>Te lo resumo</strong>
+              </p>
+            </div>
 
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+              <div class="ratio ratio-16x9 rounded overflow-hidden" style="box-shadow: 6px 6px 0 var(--red), 12px 12px 0 rgba(228,28,28,0.25);">
+                <iframe
+                  src="https://www.youtube.com/embed/p0FPYGzs_5M" 
+                  title="LA EDAD DE ORO: Del Heroísmo a la Propaganda Patriótica"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p class="text-muted small mt-2 mb-0 text-start ps-1">
+                <i class="bi bi-youtube text-danger me-1"></i> Video por: <strong>GO! el monitor geek</strong>
+              </p>
+            </div>
 
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <aside>
-        <p>Si quieres contactarnos para ayudarte a crear tu página web <a href="tel +8110354587">Llamanos &phone;</a> <br>O puedes mandarnos un correo a: <address>WebCreators@hotmail.com</address></p>
-    </aside>
+    <!-- ── VIDEOJUEGOS ── -->
+    <section class="content-block py-5 py-lg-6" id="videojuegos">
+      <div class="container">
 
+        <div class="section-label-row d-flex align-items-center gap-3 mb-5" data-aos="fade-right">
+          <span class="media-icon text-danger"><i class="bi bi-controller fs-1"></i></span>
+          <div>
+            <span class="section-tag bg-warning text-dark px-3 py-1 rounded-pill small fw-bold">Medio #2</span>
+            <h2 class="section-heading mt-1 mb-0">Videojuegos</h2>
+          </div>
+        </div>
 
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+            <p class="section-body">
+              En videojuegos, <em>Spider-Man 2 (2004)</em> para Xbox, PS2 (y demás consolas de la época) fue un parte aguas para el género y los juegos de mundio abierto. <em>Batman: Arkham Asylum (2009)</em> innovó con su sistema de combate y
+              narrativa, mientras que <em>Spider-Man (2018)</em> para PS4 destacó por su jugabilidad.
+            </p>
+            <p class="section-body">
+              <em>Lego Batman: Legacy of the Dark Knight (2026)</em> es el nuevo videojuego de TT Games, regresando al caballero nocturno a una nueva aventura revisitando los más de 80 años de vida del enmascarado (con el sentido del humor característico de Lego).
+            </p>
 
-    <footer>
-        <p>Fin del Articulo</p>
-        <hr>
-        <address>
-            <p>Desarrollado por DHG</p>
-            <p>Derechos Reservados &copy;</p>
-        </address>
-    </footer>
+            <!-- Cita destacada -->
+            <blockquote class="marvel-quote mt-4">
+              <i class="bi bi-quote fs-2 text-danger d-block mb-1" aria-hidden="true"></i>
+              Ganó el récord mundial Guinness como el <strong>«Juego de superhéroes más aclamado por la crítica»</strong>
+              y ha sido citado como uno de los mejores videojuegos jamás creados.
+              <cite class="d-block small mt-2 text-muted">
+                — <a href="https://es.wikipedia.org/wiki/Batman:_Arkham_Asylum" target="_blank" rel="noopener" class="text-muted">Wikipedia · Batman: Arkham Asylum</a>
+              </cite>
+            </blockquote>
+          </div>
+
+          <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+            <figure class="comic-frame mx-auto">
+              <img
+                src="img/pagina2-img/BatmanAA.png"
+                alt="Batman: Arkham Asylum"
+                class="img-fluid comic-img"
+                style="max-height:380px; object-fit:cover;">
+              <figcaption class="mt-3 text-muted small">
+                <strong>Batman: Arkham Asylum</strong> (2009) — Rocksteady Studios
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Mini cards de juegos -->
+        <div class="row g-3 mt-4">
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="game-card">
+              <span class="game-year">2004</span>
+              <span class="game-name">Spider-Man 2</span>
+              <span class="game-platform"><i class="bi bi-joystick me-1"></i>PS2/Xbox</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="80">
+            <div class="game-card">
+              <span class="game-year">2009</span>
+              <span class="game-name">Arkham Asylum</span>
+              <span class="game-platform"><i class="bi bi-joystick me-1"></i>PS3 / Xbox 360</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="160">
+            <div class="game-card">
+              <span class="game-year">2018</span>
+              <span class="game-name">Spider-Man</span>
+              <span class="game-platform"><i class="bi bi-joystick me-1"></i>PS4</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="240">
+            <div class="game-card">
+              <span class="game-year">2026</span>
+              <span class="game-name">Lego Batman: LDK</span>
+              <span class="game-platform"><i class="bi bi-joystick me-1"></i>Multi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERIES ── -->
+    <section class="content-alt py-5 py-lg-6" id="series">
+      <div class="container">
+
+        <div class="section-label-row d-flex align-items-center gap-3 mb-5" data-aos="fade-right">
+          <span class="media-icon text-danger"><i class="bi bi-tv fs-1"></i></span>
+          <div>
+            <span class="section-tag bg-info text-dark px-3 py-1 rounded-pill small fw-bold">Medio #3</span>
+            <h2 class="section-heading mt-1 mb-0">Series de Televisión</h2>
+          </div>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+            <p class="section-body">
+              En series, <em>Batman: The Animated Series (1992–1995)</em> fue pionera en la animación de
+              superhéroes, seguida por <em>Spider-Man: The Animated Series (1994–1998)</em>, que popularizó
+              al personaje en televisión.
+            </p>
+            <p class="section-body">
+              <em>Daredevil (2015–2018)</em> destacó por su tono oscuro y desarrollo de personajes.
+              En la actualidad, tanto Marvel, DC y empresas independientes como
+              <em>The Umbrella Academy</em> siguen realizando series, aprovechando el formato episódico
+              para lograr narrativas más profundas.
+            </p>
+          </div>
+
+          <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+            <figure class="comic-frame mx-auto">
+              <img
+                src="img/pagina2-img/BatmanTAS.png"
+                alt="Batman: La Serie Animada"
+                class="img-fluid comic-img"
+                style="max-height:380px; object-fit:cover; object-position:top;">
+              <figcaption class="mt-3 text-muted small">
+                <strong>Batman: The Animated Series</strong> (1992) — pionera del género
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MÚSICA ── -->
+    <section class="content-block py-5 py-lg-6" id="musica">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+
+            <div class="section-label-row d-flex align-items-center gap-3 mb-4">
+              <span class="media-icon text-danger"><i class="bi bi-music-note-beamed fs-1"></i></span>
+              <div>
+                <span class="section-tag bg-danger text-white px-3 py-1 rounded-pill small fw-bold">Bonus</span>
+                <h2 class="section-heading mt-1 mb-0">Y también la Música</h2>
+              </div>
+            </div>
+
+            <p class="section-body mb-4">
+              Los superhéroes también han inspirado el mundo musical. Un ejemplo icónico es
+              <strong>Kryptonite</strong> de <em>3 Doors Down</em>, canción basada en el universo de Superman
+              que se convirtió en uno de los himnos del género alternativo de los 2000s.
+            </p>
+
+            <!-- Audio player personalizado -->
+            <div class="audio-player-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="d-flex align-items-center gap-4">
+                <div class="audio-album-art">
+                  <i class="bi bi-vinyl fs-1 text-danger"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="audio-title mb-0">Kryptonite</p>
+                  <p class="audio-artist text-muted small mb-2">3 Doors Down · The Better Life (2000)</p>
+                  <audio controls class="w-100 custom-audio" src="3_Doors_Down_Kryptonite.mp3">
+                    Tu navegador no soporta audio HTML5.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Conclusión ── -->
+    <section class="stats-strip py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number text-danger">$30B+</span>
+              <span class="stat-label">Recaudación MCU</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number text-danger">30+</span>
+              <span class="stat-label">Películas MCU</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number text-danger">1978</span>
+              <span class="stat-label">Primer film moderno</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number text-danger">∞</span>
+              <span class="stat-label">Historias por contar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Navegación entre páginas ── -->
+    <section class="py-5 content-block">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a href="index.html" class="btn btn-outline-secondary rounded-pill px-4">
+              <i class="bi bi-arrow-left me-2"></i>Volver al Inicio
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="pagina3.html" class="btn btn-danger rounded-pill px-4">
+              Sector 2814 <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4">
+          <span class="brand-text fs-4">HERO<span class="text-danger">VERSE</span></span>
+          <p class="small text-muted mt-2 mb-0">Explorando la cultura de los superhéroes.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <nav aria-label="Footer nav">
+            <a href="index.html" class="footer-link me-3">Inicio</a>
+            <a href="pagina2.html" class="footer-link me-3">Medios</a>
+            <a href="pagina3.html" class="footer-link me-3">Sector 2814</a>
+            <a href="pagina5.html" class="footer-link">Encuesta</a>
+          </nav>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="small text-muted mb-1">
+            <i class="bi bi-telephone me-1"></i>
+            <a href="tel:+8110354587" class="footer-link">811 035 4587</a>
+          </p>
+          <p class="small text-muted mb-0">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="mailto:WebCreators@hotmail.com" class="footer-link">WebCreators@hotmail.com</a>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <p class="text-center text-muted small mb-0">Desarrollado por DHG &copy; 2024. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
+
+  <!-- Estilos extra solo para esta página -->
+  <style>
+    /* Timeline */
+    .film-timeline { display: flex; flex-direction: column; gap: 0.6rem; }
+    .timeline-item {
+      display: flex; align-items: baseline; gap: 1rem;
+      padding: 0.5rem 0; border-bottom: 1px solid var(--border);
+    }
+    .timeline-year {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--red);
+      min-width: 52px;
+      letter-spacing: 0.04em;
+    }
+    .timeline-text {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.6);
+    }
+    [data-bs-theme="light"] .timeline-text { color: rgba(0,0,0,0.55); }
+
+    /* Game cards */
+    .game-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.2rem 1rem;
+      display: flex; flex-direction: column; gap: 0.2rem;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .game-card:hover { border-color: var(--red); transform: translateY(-4px); }
+    .game-year {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--red);
+      line-height: 1;
+    }
+    .game-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    [data-bs-theme="light"] .game-name { color: #111; }
+    .game-platform { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
+    [data-bs-theme="light"] .game-platform { color: rgba(0,0,0,0.4); }
+
+    /* Audio card */
+    .audio-player-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+    }
+    .audio-album-art {
+      width: 64px; height: 64px;
+      background: rgba(228,28,28,0.1);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .audio-title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: #fff;
+      letter-spacing: 0.04em;
+    }
+    [data-bs-theme="light"] .audio-title { color: #111; }
+    audio.custom-audio { accent-color: var(--red); }
+  </style>
+
 </body>
-
 </html>

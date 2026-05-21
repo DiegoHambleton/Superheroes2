@@ -1,146 +1,401 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los héroes más populares del Sector 2814!</title>
-    <link rel="icon" href="https://w7.pngwing.com/pngs/870/61/png-transparent-comics-comic-book-others-comics-comic-book-logo-thumbnail.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sector 2814 — HeroVerse</title>
+  <meta name="description" content="Los superhéroes más famosos del Sector 2814 — Superman, Batman, Spider-Man, Wolverine y Wonder Woman.">
+  <meta name="author" content="DHG">
+  <link rel="icon" href="https://w7.pngwing.com/pngs/870/61/png-transparent-comics-comic-book-others-comics-comic-book-logo-thumbnail.png" type="image/png">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h2>¡Explora!</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Importancia de los Superheroés</a></li>
-                <li><a href="pagina2.html">Impacto en otros medios</a></li>
-                <li><a href="pagina4.html">Los héroes más queridos en el multiverso!</a></li>
-                <li><a href="pagina5.html">¿Cuál es tu preferido?</a></li>
-            </ul>
-        </nav>
-    </header>
 
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-text">HERO<span class="text-danger">VERSE</span></span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina2.html">Otros Medios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pagina3.html">Sector 2814</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina4.html">Multiverso</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina5.html">Encuesta</a></li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn btn-sm btn-outline-light rounded-pill px-3" id="darkToggle" title="Cambiar tema">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+  <header class="page-hero position-relative overflow-hidden">
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="container position-relative z-1" data-aos="fade-up" data-aos-duration="800">
+      <p class="overline-label text-danger text-uppercase fw-bold letter-wide mb-2">
+        <i class="bi bi-globe me-1"></i> DC Comics · Marvel Comics
+      </p>
+      <h1 class="hero-title">Los Héroes del<br><span class="text-danger">Sector 2814</span></h1>
+      <p class="hero-sub mx-auto mt-3">
+        Los superhéroes más populares que protegen nuestro planeta,<br class="d-none d-md-inline">
+        el Sector 2814 del universo DC.
+      </p>
+      <p class="mt-3">
+        <span class="badge bg-danger bg-opacity-25 text-danger border border-danger border-opacity-25 px-3 py-2 rounded-pill">
+          <i class="bi bi-info-circle me-1"></i>
+          El Sector 2814 es el número que le corresponde a la Tierra en el universo DC Comics
+        </span>
+      </p>
+    </div>
+  </header>
 
-    <main>
-        <h1>Superhéroes Famosos</h1>
-        <ol>
-            <li>
-                <div>
-                    <dl>
-                        <dt><strong>Superman</strong></dt>
-                        <dd>El Hombre de Acero, creado en 1938, es un ícono cultural. Su lucha por la justicia y su código moral lo han convertido en un faro de esperanza para muchos.</dd>
-                    </dl>
-                    <center>
-                        <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/08/03/16595421832009.jpg" alt="Superman" height="300">
-                    </center>
+  <!-- ═══════════════════════ MAIN ═══════════════════════ -->
+  <main class="py-5 py-lg-6 content-block">
+    <div class="container">
 
-                    <h2>DATO EXTRA: La Fuerza de Superman!!!</h2>
-                    <p> En una historia de cómic, Superman fue capaz de levantar la masa de la Tierra durante cinco días. Se estima que su fuerza era al menos un 50% mayor que el peso levantado, lo que equivale a aproximadamente 9000 trillones de toneladas.
-                    </p>
-                
-                    <p>La fórmula para calcular la fuerza de Superman es: <br>
-                    <strong>F<sub>S</sub> = W<sub>T</sub> × (1 + ΔF)</strong></p>
-                
-                    <p>
-                        Donde:
-                    </p>
-                    <ul>
-                        <li><strong>F<sub>S</sub></strong> es la fuerza de Superman.</li>
-                        <li><strong>W<sub>T</sub></strong> es el peso total levantado, equivalente a la masa de la Tierra, que es aproximadamente 9000 trillones de toneladas.</li>
-                        <li><strong>ΔF</strong> es el incremento de fuerza que Superman puede aplicar, que es un 50% adicional sobre el peso levantado.</li>
-                    </ul>
-                
-                    <p>
-                        Desglose de la Fórmula:
-                    </p>
-                    <ol>
-                        <li><strong>W<sub>T</sub></strong>: Este es el peso de la Tierra que Superman levantó, que se estima en 9000 trillones de toneladas (o 9 × 10<sup>21</sup> toneladas).</li>
-                        <li><strong>ΔF</strong>: Es la fracción adicional de fuerza que Superman puede aplicar. En este caso, ΔF = 0.5, lo que significa que su fuerza es un 50% mayor que el peso levantado.</li>
-                        <li><strong>F<sub>S</sub></strong>: Es la fuerza total que Superman tiene, y se calcula sumando el peso W<sub>T</sub> y el incremento de fuerza ΔF aplicado a ese peso.</li>
-                    </ol>
-                
-                    <p>
-                        Sustituyendo los valores:
-                    </p>
-                    <p>
-                        F<sub>S</sub> = 9 × 10<sup>21</sup> × (1 + 0.5) <br>
-                        F<sub>S</sub> = 9 × 10<sup>21</sup> × 1.5 <br>
-                        <strong>F<sub>S</sub> = 1.35 × 10<sup>22</sup> toneladas</strong>
-                    </p>
+      <!-- ── Buscador + Filtros ── -->
+      <div class="filter-bar" data-aos="fade-up">
+        <div class="row g-3 align-items-center">
+          <!-- Search -->
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0" style="border-color: var(--border);">
+                <i class="bi bi-search text-muted"></i>
+              </span>
+              <input
+                type="text"
+                id="heroSearch"
+                class="form-control border-start-0"
+                placeholder="Buscar héroe..."
+                autocomplete="off"
+                style="border-color: var(--border);">
+            </div>
+          </div>
+          <!-- Filters -->
+          <div class="col-md-7">
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-outline-danger filter-btn active" data-filter="all">
+                <i class="bi bi-grid me-1"></i>Todos
+              </button>
+              <button class="btn btn-outline-secondary filter-btn" data-filter="dc">
+                <i class="bi bi-shield-fill me-1"></i>DC Comics
+              </button>
+              <button class="btn btn-outline-secondary filter-btn" data-filter="marvel">
+                <i class="bi bi-stars me-1"></i>Marvel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                </div>
-            </li>
-            &nbsp;
-            <li>
-                <div>
-                    <dl>
-                        <dt><strong>Batman</strong></dt>
-                        <dd>El Caballero Oscuro de Gotham City es un testamento a la resistencia humana. Su trágico pasado acompañado de su diseño, universo, ingenio y la gran diversidad de historias que hay sobre el Detective más grande del Mundo lo hace ser uno de los preferidos de los fans.</dd>
-                    </dl>
-                    <center>
-                        <img src="https://i.ebayimg.com/images/g/JTUAAOSwDhlgptWR/s-l1200.jpg" alt="Batman" height="300">
-                    </center>
-                </div> 
-            </li>
-            &nbsp;            
-            <li>
-                <div>
-                    <dl>
-                        <dt><strong>Spider-Man</strong></dt>
-                        <dd>Peter Parker, el Héroe de la Vecindad, es relatable para el público. Sus luchas con amor, aceptación y encontrar su lugar en el mundo han sido fundamentales para que sea uno de los héroes más queridos del mundo.</dd>
-                    </dl>
-                    <center>
-                        <img src="https://m.media-amazon.com/images/I/81rZn+tvW-L.jpg" alt="Spider-Man" height="300">
-                    </center>
-                </div>
-            </li>
-            &nbsp;
-            <li>
-                <div>
-                    <dl>
-                        <dt><strong>Wolverine</strong></dt>
-                        <dd>Logan, con un pasado oscuro y actitud feroz, se ha vuelto más popular gracias a las películas de los "X-Men" o la actual "Deadpool and Wolverine".</dd>
-                    </dl>
-                    <center>
-                        <img src="https://i.pinimg.com/736x/8d/78/d7/8d78d738500a72da712cf0a0d79eee40.jpg" alt="Wolverine" height="300">
-                    </center>
-                </div>
-            </li>
-            &nbsp;
-            <li>
-                <div>
-                    <dl>
-                        <dt><strong>Wonder Woman</strong></dt>
-                        <dd>Diana Prince es un faro de fortaleza y empoderamiento femenino. Sus recientes películas han ayudado para aumentar aún más su importancia en la cultura pop y respeto tanto en hombres como mujeres.</dd>
-                    </dl>
-                    <center>
-                        <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2017/01/19/ac2e6746-ac5f-48ee-8786-24a64193bcca/thumbnail/640x610/dfe29b2f380ed1b30cb3a88ab30c6af3/wonder-woman-dc-art-2009.jpg?v=0a0c17d349635d55704afd4e16e28fc6" alt="Wonder Woman" height="300">
-                    </center>
-                </div>
-            </li>
-        </ol>
-        <p><cite>Fuente: <a href="https://ocio3cero.com/cuales-son-los-superheroes-mas-famosos-del-mundo/">Los heroés más famosos del mundo</a></cite></p>
-        <h3>Dato: ¿Qué significa el <em>"Sector 2814"</em>del titulo de la página?</h3>
-        <small>R= Se refiere al número del sector al que pertenece la tierra en el universo de DC Comics</small>
-    </main>
+      <!-- ── Hero Cards Grid ── -->
+      <div class="row g-4" id="heroGrid">
 
+        <!-- Superman -->
+        <div class="col-sm-6 col-lg-4 hero-card-wrapper" data-name="superman" data-universe="dc" data-aos="fade-up" data-aos-delay="0">
+          <div class="hero-card h-100">
+            <div class="overflow-hidden">
+              <img src="img/pagina3 img/Superman.jpg"
+                   alt="Superman" class="hero-card-img">
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-universe">DC Comics · 1938</p>
+              <h3 class="hero-card-name">Superman</h3>
+              <p class="hero-card-desc">
+                El Hombre de Acero. Su lucha por la justicia y su código moral lo han convertido en un faro de esperanza para la humanidad.
+              </p>
+              <!-- Fact badge -->
+              <div class="hero-fact mt-3">
+                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
+                <small>Puede levantar <strong>1.35 × 10²² toneladas</strong></small>
+              </div>
+              <button class="btn btn-outline-danger btn-sm mt-3 w-100 rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#heroModal"
+                data-name="Superman"
+                data-universe="DC Comics · 1938"
+                data-img="img/pagina3 img/Superman.jpg"
+                data-desc="El Hombre de Acero, creado en 1938, es un ícono cultural. Su lucha por la justicia y su código moral lo han convertido en un faro de esperanza para muchos. Originalmente llamado Kal-El, fue enviado desde Krypton a la Tierra."
+                data-fact="En una historia de cómic, Superman fue capaz de levantar la masa de la Tierra durante cinco días. Se estima que su fuerza era al menos un 50% mayor que el peso levantado, equivalente a aproximadamente 1.35 × 10²² toneladas.">
+                <i class="bi bi-info-circle me-1"></i>Ver más
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Batman -->
+        <div class="col-sm-6 col-lg-4 hero-card-wrapper" data-name="batman" data-universe="dc" data-aos="fade-up" data-aos-delay="80">
+          <div class="hero-card h-100">
+            <div class="overflow-hidden">
+              <img src="img/pagina3 img/Batman.jpg"
+                   alt="Batman" class="hero-card-img">
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-universe">DC Comics · 1939</p>
+              <h3 class="hero-card-name">Batman</h3>
+              <p class="hero-card-desc">
+                El Caballero Oscuro de Gotham City. Su trágico pasado, ingenio y la diversidad de sus historias lo hacen el Detective más grande del mundo.
+              </p>
+              <div class="hero-fact mt-3">
+                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
+                <small>IQ estimado: <strong>+192</strong> — El humano más inteligente del mundo DC</small>
+              </div>
+              <button class="btn btn-outline-danger btn-sm mt-3 w-100 rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#heroModal"
+                data-name="Batman"
+                data-universe="DC Comics · 1939"
+                data-img="img/pagina3 img/Batman.jpg"
+                data-desc="El Caballero Oscuro de Gotham City es un testamento a la resistencia humana. Sin poderes sobrenaturales, Bruce Wayne usa su inteligencia, entrenamiento físico y recursos económicos para combatir el crimen."
+                data-fact="Batman es considerado el detective más grande del universo DC, con un IQ estimado superior a 192. Ha derrotado a seres con poderes cósmicos usando solo su inteligencia y preparación.">
+                <i class="bi bi-info-circle me-1"></i>Ver más
+              </button>
+            </div>
+          </div>
+        </div>
 
-    <aside>
-        <p>Si quieres contactarnos para ayudarte a crear tu página web <a href="tel +8110354587">Llamanos &phone;</a> <br>O puedes mandarnos un correo a: <address>WebCreators@hotmail.com</address></p>
-    </aside>
+        <!-- Spider-Man -->
+        <div class="col-sm-6 col-lg-4 hero-card-wrapper" data-name="spider-man" data-universe="marvel" data-aos="fade-up" data-aos-delay="160">
+          <div class="hero-card h-100">
+            <div class="overflow-hidden">
+              <img src="img/pagina3 img/Spider-man.jpg"
+                   alt="Spider-Man" class="hero-card-img">
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-universe">Marvel Comics · 1962</p>
+              <h3 class="hero-card-name">Spider-Man</h3>
+              <p class="hero-card-desc">
+                Peter Parker, el Héroe de la Vecindad. Sus luchas con el amor, la aceptación y encontrar su lugar en el mundo lo hacen el más querido del mundo.
+              </p>
+              <div class="hero-fact mt-3">
+                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
+                <small>Puede levantar hasta <strong>10 toneladas</strong> con su traje básico</small>
+              </div>
+              <button class="btn btn-outline-danger btn-sm mt-3 w-100 rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#heroModal"
+                data-name="Spider-Man"
+                data-universe="Marvel Comics · 1962"
+                data-img="img/pagina3 img/Spider-man.jpg"
+                data-desc="Peter Parker es relatable para el público. Tras ser picado por una araña radiactiva, adquirió poderes arácnidos. Stan Lee lo creó para que los jóvenes lectores pudieran identificarse con un héroe que enfrentaba problemas cotidianos."
+                data-fact="Spider-Man puede cargar hasta 10 toneladas con su traje básico. Con el traje de hierro provisto por Tony Stark, sus capacidades se multiplican exponencialmente. Su sexto sentido (Spider-Sense) le avisa de peligros antes de que ocurran.">
+                <i class="bi bi-info-circle me-1"></i>Ver más
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Wolverine -->
+        <div class="col-sm-6 col-lg-4 hero-card-wrapper" data-name="wolverine" data-universe="marvel" data-aos="fade-up" data-aos-delay="0">
+          <div class="hero-card h-100">
+            <div class="overflow-hidden">
+              <img src="img/pagina3 img/Wolverine.jpg"
+                   alt="Wolverine" class="hero-card-img">
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-universe">Marvel Comics · 1974</p>
+              <h3 class="hero-card-name">Wolverine</h3>
+              <p class="hero-card-desc">
+                Logan, con un pasado oscuro y actitud feroz. Su popularidad se disparó con las películas de X-Men y la reciente <em>Deadpool & Wolverine</em>.
+              </p>
+              <div class="hero-fact mt-3">
+                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
+                <small>Factor de curación: puede regenerar órganos en <strong>segundos</strong></small>
+              </div>
+              <button class="btn btn-outline-danger btn-sm mt-3 w-100 rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#heroModal"
+                data-name="Wolverine"
+                data-universe="Marvel Comics · 1974"
+                data-img="img/pagina3 img/Wolverine.jpg"
+                data-desc="Logan, también conocido como James Howlett, es un mutante con garras de adamantio y un factor de curación sobrehumano. Su esqueleto está recubierto de adamantio, el metal más resistente del universo Marvel."
+                data-fact="Wolverine tiene más de 130 años debido a su factor de curación que detiene su envejecimiento. Ha vivido las dos Guerras Mundiales, Vietnam y múltiples conflictos globales, acumulando habilidades de combate incomparables.">
+                <i class="bi bi-info-circle me-1"></i>Ver más
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Wonder Woman -->
+        <div class="col-sm-6 col-lg-4 hero-card-wrapper" data-name="wonder woman" data-universe="dc" data-aos="fade-up" data-aos-delay="80">
+          <div class="hero-card h-100">
+            <div class="overflow-hidden">
+              <img src="img/pagina3 img/WonderWoman.jpg"
+                   alt="Wonder Woman" class="hero-card-img">
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-universe">DC Comics · 1941</p>
+              <h3 class="hero-card-name">Wonder Woman</h3>
+              <p class="hero-card-desc">
+                Diana Prince, faro de fortaleza y empoderamiento. Sus películas aumentaron su importancia en la cultura pop y su respeto universal.
+              </p>
+              <div class="hero-fact mt-3">
+                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
+                <small>Fuerza al nivel de Superman · Entrenada por los dioses del Olimpo</small>
+              </div>
+              <button class="btn btn-outline-danger btn-sm mt-3 w-100 rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#heroModal"
+                data-name="Wonder Woman"
+                data-universe="DC Comics · 1941"
+                data-img="img/pagina3 img/WonderWoman.jpg"
+                data-desc="Diana Prince es una Amazona semidiosa, hija de Zeus y la reina Hipólita. Fue creada por William Moulton Marston en 1941 con el propósito explícito de representar un modelo de empoderamiento femenino en los cómics."
+                data-fact="Wonder Woman tiene fuerza comparable a Superman, es prácticamente inmortal y posee el Lazo de la Verdad, que obliga a cualquiera a decir la verdad absoluta. Es considerada la guerrera más hábil del universo DC.">
+                <i class="bi bi-info-circle me-1"></i>Ver más
+              </button>
+            </div>
+          </div>
+        </div>
 
-    <footer>
-        <p>Fin del Articulo</p>
-        <hr>
-        <address>
-            <p>Desarrollado por DHG</p>
-            <p>Derechos Reservados &copy;</p>
-        </address>
-    </footer>  
+        <!-- Empty state -->
+        <div id="noResults" class="col-12 text-center py-5 d-none">
+          <i class="bi bi-search fs-1 text-muted d-block mb-3"></i>
+          <p class="text-muted">No se encontraron héroes con ese criterio.</p>
+          <button class="btn btn-outline-danger btn-sm rounded-pill" onclick="resetFilters()">
+            Ver todos
+          </button>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Fuente -->
+      <p class="text-muted small mt-4">
+        <i class="bi bi-link-45deg me-1"></i>
+        <a href="https://ocio3cero.com/cuales-son-los-superheroes-mas-famosos-del-mundo/" target="_blank" rel="noopener" class="text-muted">
+          Fuente: Los héroes más famosos del mundo — ocio3cero.com
+        </a>
+      </p>
+
+      <!-- Navegación -->
+      <div class="d-flex justify-content-between mt-5">
+        <a href="pagina2.html" class="btn btn-outline-secondary rounded-pill px-4">
+          <i class="bi bi-arrow-left me-2"></i>Otros Medios
+        </a>
+        <a href="pagina4.html" class="btn btn-danger rounded-pill px-4">
+          Multiverso <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════ MODAL ═══════════════════════ -->
+  <div class="modal fade" id="heroModal" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <p class="hero-card-universe mb-1" id="modalHeroUniverse"></p>
+            <h2 class="modal-title hero-card-name mb-0" id="heroModalLabel">
+              <span id="modalHeroName"></span>
+            </h2>
+          </div>
+          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-5 text-center">
+              <img id="modalHeroImg" src="" alt="" class="img-fluid rounded" style="max-height:320px; object-fit:cover; object-position:top; width:100%;">
+            </div>
+            <div class="col-md-7">
+              <h6 class="text-uppercase text-muted small letter-wide mb-2">Descripción</h6>
+              <p class="section-body" id="modalHeroDesc"></p>
+              <div class="hero-fact mt-3 p-3 rounded" style="background:rgba(228,28,28,0.08); border:1px solid rgba(228,28,28,0.2);">
+                <p class="text-danger small fw-bold text-uppercase letter-wide mb-1">
+                  <i class="bi bi-lightning-charge-fill me-1"></i>Dato de poder
+                </p>
+                <p class="section-body mb-0 small" id="modalHeroFact"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4">
+          <span class="brand-text fs-4">HERO<span class="text-danger">VERSE</span></span>
+          <p class="small text-muted mt-2 mb-0">Explorando la cultura de los superhéroes.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="index.html" class="footer-link me-3">Inicio</a>
+          <a href="pagina2.html" class="footer-link me-3">Medios</a>
+          <a href="pagina3.html" class="footer-link me-3">Sector 2814</a>
+          <a href="pagina5.html" class="footer-link">Encuesta</a>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="small text-muted mb-1">
+            <i class="bi bi-telephone me-1"></i>
+            <a href="tel:+8110354587" class="footer-link">811 035 4587</a>
+          </p>
+          <p class="small text-muted mb-0">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="mailto:WebCreators@hotmail.com" class="footer-link">WebCreators@hotmail.com</a>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <p class="text-center text-muted small mb-0">Desarrollado por DHG &copy; 2024. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
+
+  <script>
+    function resetFilters() {
+      document.getElementById('heroSearch').value = '';
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active','btn-danger'));
+      document.querySelector('[data-filter="all"]').classList.add('active','btn-danger');
+      document.querySelectorAll('.hero-card-wrapper').forEach(w => w.style.display = '');
+      document.getElementById('noResults').classList.add('d-none');
+    }
+  </script>
+
+  <style>
+    .hero-card-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+    .hero-card:hover .hero-card-img { transform: scale(1.05); }
+
+    .hero-fact {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+    }
+    [data-bs-theme="light"] .hero-fact { color: rgba(0,0,0,0.5); }
+  </style>
+
 </body>
-
 </html>
